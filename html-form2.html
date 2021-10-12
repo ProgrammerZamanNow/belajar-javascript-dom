@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Element</title>
+</head>
+<body>
+<form name="commentForm">
+    <label for="comment">
+        Comment : <input type="text" name="comment" id="comment">
+    </label>
+    <br>
+    <label for="from">
+        From : <input type="text" name="from" id="from">
+    </label>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<div id="commentList">
+
+</div>
+
+<script>
+
+    document.forms['commentForm'].onsubmit = function (event){
+        event.preventDefault();
+
+        const commentList = document.getElementById("commentList");
+        const comment = document.forms['commentForm']['comment'].value;
+        const from = document.forms['commentForm']['from'].value;
+
+        const commentItem = document.createElement("p");
+        commentItem.textContent = `${comment} - ${from}`;
+        commentList.appendChild(commentItem);
+
+        document.forms['commentForm'].reset();
+    }
+
+</script>
+
+</body>
+</html>

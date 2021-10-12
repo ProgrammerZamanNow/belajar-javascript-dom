@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NodeList</title>
+</head>
+<body>
+
+<ul id="menu1">
+  <li id="first">First</li>
+  <li id="second">Second</li>
+  <li id="third">Third</li>
+</ul>
+
+<ul id="menu2">
+  <li>Eko</li>
+  <li>Kurniawan</li>
+  <li>Khannedy</li>
+</ul>
+
+<script>
+
+  const list = document.querySelectorAll("li");
+  console.info(list);
+
+  const menu1 = document.getElementById("menu1").childNodes;
+  console.info(menu1);
+
+  const menu2 = document.getElementById("menu2").childNodes;
+  console.info(menu2);
+
+</script>
+</body>
+</html>

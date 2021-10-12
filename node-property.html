@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node Property</title>
+</head>
+<body>
+<ul id="menu">
+    <li id="first">First</li>
+    <li id="second">Second</li>
+    <li id="third">Third</li>
+</ul>
+<script>
+
+    const menu = document.getElementById("menu");
+    console.info(menu);
+    console.info(menu.childNodes);
+
+    const second = document.getElementById("second");
+    console.info(second);
+    console.info(second.textContent);
+    console.info(second.previousSibling);
+    console.info(second.nextSibling);
+
+</script>
+</body>
+</html>

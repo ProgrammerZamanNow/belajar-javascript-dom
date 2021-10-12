@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Element Property</title>
+</head>
+<body>
+<div id="content" class="content">
+
+</div>
+
+<script>
+    const content = document.getElementById("content");
+
+    // create h1
+    const title = document.createElement("h1");
+    title.textContent = "Belajar JavaScript DOM";
+    content.appendChild(title);
+
+    const description = document.createElement("p");
+    description.textContent = "Selamat Belajar JavaScript DOM";
+    content.appendChild(description);
+</script>
+
+</body>
+</html>

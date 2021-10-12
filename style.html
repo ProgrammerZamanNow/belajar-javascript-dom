@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style</title>
+</head>
+<body>
+<input type="button" value="blue">
+<input type="button" value="red">
+<input type="button" value="yellow">
+<div id="canvas" style="width: 500px; height: 500px; background-color: black"></div>
+
+<script>
+
+    const canvas = document.getElementById("canvas");
+    const buttons = document.querySelectorAll("input");
+
+    for (let button of buttons) {
+        button.onclick = function (){
+            canvas.style.backgroundColor = button.getAttribute("value");
+        };
+    }
+
+</script>
+
+</body>
+</html>

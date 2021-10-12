@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table</title>
+</head>
+<body>
+<table id="orderRevenue" border="1">
+
+    <caption>Order Revenue</caption>
+
+    <thead>
+    <tr>
+        <th>Month</th>
+        <th>Income</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>January</td>
+        <td>100.000.000</td>
+    </tr>
+    <tr>
+        <td>February</td>
+        <td>200.000.000</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td>Total</td>
+        <td>300.000.000</td>
+    </tr>
+    </tfoot>
+
+</table>
+
+<script>
+
+    const table = document.getElementById("orderRevenue");
+    console.info(table.caption);
+    console.info(table.tHead);
+    console.info(table.tBodies);
+    console.info(table.tFoot);
+    console.info(table.rows);
+
+</script>
+
+</body>
+</html>

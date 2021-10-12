@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window</title>
+</head>
+<body>
+<p id="content"></p>
+<p id="location"></p>
+<script>
+
+    const content = document.getElementById("content");
+    const locationParagraph = document.getElementById("location");
+
+    const height = window.screen.height;
+    const width = window.screen.width;
+    const url = window.location;
+
+    content.textContent = `Window width : ${width}, height : ${height}`;
+    locationParagraph.textContent = url;
+
+</script>
+</body>
+</html>

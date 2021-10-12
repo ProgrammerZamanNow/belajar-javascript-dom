@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inner Text</title>
+</head>
+<body>
+<p id="content">
+    <script>
+        console.info("Hello World");
+    </script>
+    <b>Eko</b> Kurniawan <i>Khannedy</i>
+</p>
+
+<script>
+    const content = document.getElementById("content");
+    console.info(content.textContent);
+    console.info(content.innerText);
+    console.info(content.innerHTML);
+</script>
+
+</body>
+</html>

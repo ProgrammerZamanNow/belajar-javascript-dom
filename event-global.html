@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Target</title>
+</head>
+<body>
+<input id="clickMe" type="button" value="Click Me!">
+
+<script>
+
+  const button = document.getElementById("clickMe");
+  button.onclick = function (){
+      button.setAttribute("value", "You Already Click Me!");
+      console.log('Button di Click');
+  };
+
+</script>
+
+</body>
+</html>
